@@ -262,6 +262,6 @@ input[type="checkbox"]::before {
 
 @media screen and (max-width: 700px) {
    body {
-     grid-template-rows: 10% calc(100vh - 80px) 10%; 
+     grid-template-rows: 40px calc(100vh - 120px) 40px; 
    }
 }
