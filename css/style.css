@@ -259,3 +259,9 @@ input[type="checkbox"]::before {
     color: var(--score-color);
     font-family: Arial, Helvetica, sans-serif;
   }
+
+@media screen and (max-width: 1000px) {
+   body {
+     grid-template-rows: 20px calc(100vh - 80px) 100px; 
+   }
+}
