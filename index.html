@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rebound Game</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="score-container">
+            <h2 id="score">
+                Score : 0
+            </h2>
+            <div class="icon">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="setting">
+                <div class="box-container">
+                    <label for="mode">Dark Mode</label>
+                    <input type="checkbox" name="mode" id="mode">
+                </div>
+                <div class="box-container">
+                    <label for="sound">Sound</label>
+                    <input type="checkbox" name="sound" id="sound">
+                </div>
+                <div class="select-option">
+                    <p>Difficult Level :</p>
+                    <div class="box-container">
+                        <input type="radio" id="easy" name="difficulties" value="0" class="checkbox">
+                        <label for="easy">Easy</label>
+                    </div>
+                    <div class="box-container">
+                        <input type="radio" id="medium" name="difficulties" value="1" class="checkbox">
+                        <label for="medium">Medium</label>
+                    </div>
+                    <div class="box-container">
+                        <input type="radio" id="hard" name="difficulties" value="2" class="checkbox">
+                        <label for="hard">Hard</label>
+                    </div>
+                </div>
+                <div class="box-container">
+                    <button id="done">Done</button>
+                </div>
+            </div>
+        </div>
+        <div id="main-wrapper">
+            <div id="ball"></div>
+            <div id="paddle"></div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/game-engine.js"></script>
+    <script>
+        
+    </script>
+</body>
+
+</html>
