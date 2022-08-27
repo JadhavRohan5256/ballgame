@@ -209,10 +209,10 @@ let gameLoop = () => {
     // game over block
     scoreBoard.textContent = `Game Over! Your score is ${score / 100}`;
     swal("Game Over!", `Your score is ${score/ 100}`);
-    setTimeout(() => {
-      init();
-    },3000);
     playSound(beepGameOver);
+    document.querySelector(".swal-button").addEventListener("click", () => {
+      location.reload();
+    });
   }
 };
 
