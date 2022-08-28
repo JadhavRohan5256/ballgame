@@ -211,6 +211,7 @@ let gameLoop = () => {
     swal("Game Over!", `Your score is ${score/ 100}`);
     playSound(beepGameOver);
     document.querySelector(".swal-button").addEventListener("click", init);
+    document.querySelector("body").addEventListener("click", init);
   }
 };
 
